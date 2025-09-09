@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="../css/styleSignUp.css">
+</head>
+<body>
+    <div class="formulario">
+        <h2>Registro de Usuario</h2>
+        <form method="post">
+            <label for="usernameRegistro">Nombre Completo:</label>
+            <input type="text" id="fullnameRegistro" name="fullnameRegistro" required>
+            
+            <label for="emailRegistro">Correo electrónico:</label>
+            <input type="email" id="emailRegistro" name="emailRegistro" required>
+
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <fieldset>
+                <legend>Género:</legend>
+                <div class="opciones-radio">
+                    <div class="opcion">
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="radio" id="otro" name="genero" value="otro">
+                        <label for="otro">Otro</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Actividades favoritas:</legend>
+                <div class="opciones-checkbox">
+                    <div class="opcion">
+                        <input type="checkbox" id="deportes" name="actividades" value="deportes">
+                        <label for="deportes">Deportes</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="lectura" name="actividades" value="lectura">
+                        <label for="lectura">Lectura</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="musica" name="actividades" value="musica">
+                        <label for="musica">Música</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="viajes" name="actividades" value="viajes">
+                        <label for="viajes">Viajes</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="tecnologia" name="actividades" value="tecnologia">
+                        <label for="tecnologia">Tecnología</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <label for="passwordRegistro">Contraseña:</label>
+            <input type="password" id="passwordRegistro" name="passwordRegistro" required>
+
+            <label for="confirmarPassword">Confirmar contraseña:</label>
+            <input type="password" id="confirmarPassword" name="confirmarPassword" required>
+            
+            <div class="botones">
+                <input type="submit" value="Registrarse" class="btn-registrar">
+                <input type="button" value="Cancelar" class="btn-cancelar" onclick="window.location.href='IndexPage.html'">
+            </div>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+    </div>
+</body>
+</html>

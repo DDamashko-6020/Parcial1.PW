@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylePage.css">
+    <title>Landing Page Parcial</title>
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor">
+      <h1 class="nombre-noticiero">NotiNeiva</h1>
+      <nav class="menu" aria-label="Menú principal">
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="menu-icono">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu-items">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="login.html">Entrar</a></li>
+          <li class="busqueda">
+            <form class="form-busqueda">
+              <input type="text" placeholder="Buscar..." aria-label="Buscar">
+              <button type="submit" aria-label="Buscar"><i class="icono-buscar">🔍</i></button>
+            </form>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+     <section id="inicio" class="main-section">
+      <!-- Carrusel de imágenes -->
+      <div class="carrusel" aria-label="Carrusel de imágenes">
+        <button class="boton-anterior" aria-label="Anterior">&lt;</button>
+        <div class="contenedor-slides">
+          <div class="slide visible"> <!-- Slide visible -->
+            <div class="contenido-slide"><img src="imagenes/Capture.PNG">Imagen 1</div>
+          </div>
+          <div class="slide">
+            <div class="contenido-slide">Imagen 2</div>
+          </div>
+          <div class="slide">
+            <div class="contenido-slide">Imagen 3</div>
+          </div>
+          <div class="slide">
+            <div class="contenido-slide">Imagen 4</div>
+          </div>
+          <div class="slide">
+            <div class="contenido-slide">Imagen 5</div>
+          </div>
+        </div>
+
+        <button class="boton-siguiente" aria-label="Siguiente">&gt;</button>
+      </div>
+    </section>
+
+    <div class="indicadores" role="tablist">
+      <button class="indicador activo" role="tab" aria-selected="true" aria-controls="slide1"></button>
+      <button class="indicador" role="tab" aria-selected="false" aria-controls="slide2"></button>
+      <button class="indicador" role="tab" aria-selected="false" aria-controls="slide3"></button>
+      <button class="indicador" role="tab" aria-selected="false" aria-controls="slide4"></button>
+      <button class="indicador" role="tab" aria-selected="false" aria-controls="slide5"></button>
+    </div>
+
+    <section id="noticias">
+      <div class="contenedor">
+        <h2>Noticias y Actualizaciones</h2>
+        <p>Descubre las últimas noticias y actualizaciones del noticiero.</p>
+      </div>
+    </section>
+
+    <section id="sobre-nosotros">
+      <div class="contenedor">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos el principal medio de comunicación de la ciudad de Neiva, comprometidos con la verdad y la información oportuna.</p>
+      </div>
+    </section>
+  </script>
+</body>
+</html>
