@@ -40,19 +40,16 @@
         <button class="boton-anterior" aria-label="Anterior">&lt;</button>
         <div class="contenedor-slides">
           <div class="slide visible"> <!-- Slide visible -->
-            <div class="contenido-slide"><img src="imagenes/Capture.PNG">Imagen 1</div>
+            <div class="contenido-slide"><img src="../imagenes/Capture.PNG">Imagen 1</div>
           </div>
           <div class="slide">
-            <div class="contenido-slide">Imagen 2</div>
+            <div class="contenido-slide"><img src="../imagenes/Hospital-de-Neiva-Vista-Aerea.jpg">Imagen 2</div>
           </div>
           <div class="slide">
-            <div class="contenido-slide">Imagen 3</div>
+            <div class="contenido-slide"><img src="../imagenes/monumento-a-la-gaitana-neiva-800.jpg">Imagen 3</div>
           </div>
           <div class="slide">
             <div class="contenido-slide">Imagen 4</div>
-          </div>
-          <div class="slide">
-            <div class="contenido-slide">Imagen 5</div>
           </div>
         </div>
 
@@ -68,19 +65,135 @@
       <button class="indicador" role="tab" aria-selected="false" aria-controls="slide5"></button>
     </div>
 
-    <section id="noticias">
-      <div class="contenedor">
-        <h2>Noticias y Actualizaciones</h2>
-        <p>Descubre las últimas noticias y actualizaciones del noticiero.</p>
+    <section id="noticias" class="catalogo-section">
+  <div class="contenedor">
+    <h2>Noticias y Actualizaciones</h2>
+    <p class="seccion-descripcion">
+      Descubre las últimas noticias y actualizaciones del noticiero.
+    </p>
+
+    <!-- Filtros -->
+    <div class="catalogo-filtros">
+      <button class="filtro-btn activo" data-categoria="todos">Todos</button>
+      <button class="filtro-btn" data-categoria="politica">Política</button>
+      <button class="filtro-btn" data-categoria="desarrollo">Desarrollo</button>
+      <button class="filtro-btn" data-categoria="cultura">Cultura</button>
+    </div>
+
+    <!-- Contenedor de tarjetas -->
+    <div class="productos-container">
+
+      <!-- Tarjeta 1 -->
+      <div class="producto-card" data-categoria="politica">
+        <div class="producto-imagen">
+          <img src="img/noticia1.jpg" alt="Noticia Política">
+          <div class="producto-overlay">
+            <span class="producto-categoria-badge">Política</span>
+          </div>
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-titulo">Título de la Noticia 1</h3>
+          <p class="producto-descripcion">
+            Resumen detallado de la noticia 1. Esta noticia trata sobre los acontecimientos recientes en la ciudad de Neiva.
+          </p>
+          <div class="producto-detalles">
+            <span class="producto-fecha"><i class="icono-calendario">📅</i> 15 de Mayo, 2023</span>
+          </div>
+          <div class="producto-acciones">
+            <button class="btn-leer">Leer más <i class="icono-flecha">→</i></button>
+            <button class="btn-guardar"><i class="icono-guardar">🔖</i></button>
+          </div>
+        </div>
       </div>
-    </section>
+
+      <!-- Tarjeta 2 -->
+      <div class="producto-card" data-categoria="desarrollo">
+        <div class="producto-imagen">
+          <img src="img/noticia2.jpg" alt="Noticia Desarrollo">
+          <div class="producto-overlay">
+            <span class="producto-categoria-badge">Desarrollo</span>
+          </div>
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-titulo">Título de la Noticia 2</h3>
+          <p class="producto-descripcion">
+            Resumen detallado de la noticia 2. Esta noticia aborda temas importantes sobre el desarrollo urbano en nuestra región.
+          </p>
+          <div class="producto-detalles">
+            <span class="producto-fecha"><i class="icono-calendario">📅</i> 10 de Mayo, 2023</span>
+          </div>
+          <div class="producto-acciones">
+            <button class="btn-leer">Leer más <i class="icono-flecha">→</i></button>
+            <button class="btn-guardar"><i class="icono-guardar">🔖</i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="producto-card" data-categoria="cultura">
+        <div class="producto-imagen">
+          <img src="img/noticia3.jpg" alt="Noticia Cultura">
+          <div class="producto-overlay">
+            <span class="producto-categoria-badge">Cultura</span>
+          </div>
+        </div>
+        <div class="producto-info">
+          <h3 class="producto-titulo">Título de la Noticia 3</h3>
+          <p class="producto-descripcion">
+            Resumen detallado de la noticia 3. Esta noticia cubre eventos culturales y celebraciones tradicionales de nuestra comunidad.
+          </p>
+          <div class="producto-detalles">
+            <span class="producto-fecha"><i class="icono-calendario">📅</i> 5 de Mayo, 2023</span>
+          </div>
+          <div class="producto-acciones">
+            <button class="btn-leer">Leer más <i class="icono-flecha">→</i></button>
+            <button class="btn-guardar"><i class="icono-guardar">🔖</i></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> 
+</section>
+
 
     <section id="sobre-nosotros">
       <div class="contenedor">
         <h2>Sobre Nosotros</h2>
         <p>Somos el principal medio de comunicación de la ciudad de Neiva, comprometidos con la verdad y la información oportuna.</p>
+        <div class="equipo">
+          <div class="miembro">
+            <img src="../imagenes/miembro1.jpg" alt="Miembro 1">
+            <h3>Juan Carlos Medina</h3>
+            <p>Reportero</p>
+          </div>
+          <div class="miembro">
+            <img src="../imagenes/miembro2.jpg" alt="Miembro 2">
+            <h3>Andres Felipe Pinto</h3>
+            <p>Editor Periodico</p>
+          </div>
+          <div class="miembro">
+            <img src="../imagenes/miembro3.jpg" alt="Miembro 3">
+            <h3>Daniela Gonzalez</h3>
+            <p>Periodista</p>
+          </div>
+        </div>
+        <div class="redes">
+          <h3>Síguenos en Redes Sociales</h3>
+          <div class="redes-iconos">
+            <a href="#"><i class="icono-facebook">Facebook</i></a>
+            <a href="#"><i class="icono-twitter">Twitter</i></a>
+            <a href="#"><i class="icono-instagram">Instagram</i></a>
+          </div>
+        </div>
+      </div>
+
+
       </div>
     </section>
-  </script>
+  </main>
+  
+  
+  
 </body>
 </html>
